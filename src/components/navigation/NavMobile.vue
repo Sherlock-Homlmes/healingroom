@@ -47,8 +47,8 @@
         class="surface-base nav-mobile fixed inset-0 grid h-full auto-rows-min place-items-center gap-4 px-4 pt-4"
         v-show="show"
       >
-        <a href="/" class="mx-auto max-w-[12rem] pt-10">
-          <slot name="logo" />
+        <a href="/" class="mx-auto max-w-[12rem] pt-10 font-bold text-2xl">
+          HEALING ROOM
         </a>
 
         <div class="mobile-links mt-3 w-full text-center" slot="links">
@@ -66,7 +66,6 @@
           </a>
         </div>
 
-        <slot name="social" />
       </div>
     </transition>
   </span>
