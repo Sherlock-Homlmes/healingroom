@@ -140,7 +140,7 @@ body {
   @screen xs {
     --spacing: 2rem;
   }
-  font-family: "DM Sans Variable", "Adjusted Arial Fallback", "arial",
+  font-family: "Reddit sans", "Adjusted Arial Fallback", "arial",
     sans-serif;
   --container-spacing: calc(var(--spacing) * 2);
   --grid-spacing: calc(var(--spacing) / 2);
@@ -211,7 +211,7 @@ body {
   font-variation-settings: "wght" 900;
 }
 .title {
-  @apply text-4xl tracking-tighter sm:text-4xl lg:text-5xl xl:text-6xl;
+  @apply text-4xl tracking-tighter sm:text-4xl lg:text-3xl xl:text-5xl;
   text-wrap: balance;
   font-variation-settings: var(--font-var-settings-headings);
 
