@@ -1,4 +1,5 @@
 ---
+import { Picture } from "astro-imagetools/components";
 import NavMobile from "@components/navigation/NavMobile.vue";
 import { Icon } from "astro-icon/components";
 import ColorSwitch from "@components/common/ColorSwitch.vue";
@@ -25,8 +26,19 @@ const isActive = (href) => {
       href="/"
       aria-label={title}
       class="flex h-full items-center justify-start text-2xl font-black"
-      >HEALING ROOM</a
     >
+      <Picture
+        attributes={{
+          picture: {
+            class: "fade-in",
+          },
+        }}
+        width={150}
+        position="attention"
+        src="/src/assets/logo.png"
+        alt=""
+      />
+    </a>
     {
       menu && (
         <div class="nav-underline nav-links relative hidden flex-nowrap items-center gap-4 pl-4 tracking-wide transition-colors  md:flex ">
